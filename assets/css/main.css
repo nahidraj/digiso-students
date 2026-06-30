@@ -1,0 +1,242 @@
+/*
+  Theme Name: Digiso - Best Agency HTML Template
+  Support: nahidraj.web@gmail.com
+  Description: Digiso - Best Agency HTML Template
+  Version: 1.0
+*/
+/* TABLE OF CONTENT
+============================
+
+*** Template Components ***
+============================
+01. Variable CSS
+02. Common CSS
+03. Section title CSS
+04. Heading CSS
+05. Theme btn CSS
+06. Background CSS
+07. Rounded CSS
+08. Spacing CSS
+09. Animation CSS
+10. Icon box CSS
+11. Form fields CSS
+12. Header CSS
+13. Offcanvas CSS
+14. Banner CSS
+15. Services CSS
+16. About Us CSS
+17. Work Process CSS
+18. Team CSS
+19. Client CSS
+20. Testimonial CSS
+21. FAQ CSS
+22. Counter CSS
+23. Why choose us CSS
+24. Contact Form CSS
+25. Price CSS
+26. Blog CSS
+27. Location CSS
+28. Footer CSS
+29. Page Header CSS
+30. CTA CSS
+31. Pagination CSS
+
+*** Template Pages ***
+=========================
+32. Service details Page CSS
+33. Team Details Page CSS
+34. Portfolio List Page CSS
+35. Portfolio Details Page CSS
+36. Blog List Page CSS
+37. Blog Details Page CSS
+38. Contact Us Page CSS
+39. Error Page CSS
+============================
+*/
+/*=============================
+	1. Google Fonts
+===============================*/
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+/*=============================
+	01. Variable CSS start
+===============================*/
+:root {
+  --font-grotesque: "Bricolage Grotesque", sans-serif;
+  --font-sora: "Sora", sans-serif;
+  --primary-color: #D6FFC8;
+  --black-color: #10171D;
+  --white-color: #ffffff;
+  --paragraph-color: #666666;
+  --bg-color1: #FBFBFB;
+  --bg-color2: #F8F8F8;
+  --border: #E8E8E8;
+  --body-font-size: 16px;
+  --body-font-weight: 400;
+  --body-line-height: 160%;
+  --transition: all 0.3s ease-out 0s;
+}
+
+/*=============================
+	02. Common CSS start
+===============================*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sora);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+  color: var(--black-color);
+  overflow: hidden;
+}
+
+a,
+button {
+  color: var(--black-color);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+a,
+span,
+small {
+  display: inline-block;
+}
+
+a:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-grotesque);
+  color: var(--black-color);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: var(--paragraph-color);
+  margin: 0;
+  padding: 0;
+}
+
+*::-moz-selection {
+  background: var(--primary-color);
+  color: var(--black-color);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--primary-color);
+  color: var(--black-color);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: var(--black-color);
+  text-shadow: none;
+}
+
+/*=============================
+	12. Header CSS Start
+===============================*/
+.ep_header_section {
+  border-bottom: 1px solid var(--border);
+}
+.ep_header_section .container-fluid {
+  padding: 0 80px;
+}
+.ep_header_section .navbar {
+  padding: 0;
+}
+.ep_header_section .navbar .navbar-nav {
+  list-style: none;
+}
+.ep_header_section .navbar .navbar-nav li {
+  margin: 0 18px;
+  position: relative;
+}
+.ep_header_section .navbar .navbar-nav li a {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-grotesque);
+  color: var(--black-color);
+  line-height: 90px;
+}
+.ep_header_section .navbar .navbar-nav li.has-dropdown > a::after {
+  content: "\f107";
+  font-family: "Font Awesome 6 Pro";
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+  font-size: 16px;
+}
+.ep_header_section .navbar .navbar-nav li .sub-menu {
+  list-style: none;
+  position: absolute;
+  width: 250px;
+  background: var(--white-color);
+  border: 1px solid var(--border);
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition);
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.ep_header_section .navbar .navbar-nav li .sub-menu li {
+  margin: 0;
+}
+.ep_header_section .navbar .navbar-nav li .sub-menu li a {
+  padding: 11px 20px;
+  display: block;
+  border-bottom: 1px solid var(--border);
+  line-height: 28px;
+  position: relative;
+}
+.ep_header_section .navbar .navbar-nav li .sub-menu li a::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+.ep_header_section .navbar .navbar-nav li .sub-menu li a:hover {
+  background: var(--primary-color);
+}
+.ep_header_section .navbar .navbar-nav li .sub-menu li .sub-menu {
+  left: 100%;
+  top: 0;
+}
+.ep_header_section .navbar .navbar-nav li:hover > .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: scaleY(1);
+}
+.ep_header_section .header_btn a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */

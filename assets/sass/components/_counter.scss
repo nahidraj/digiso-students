@@ -1,0 +1,75 @@
+/*=============================
+	22. Counter CSS Start
+===============================*/
+.ep-counter-section {
+  .counter-body {
+    padding: 60px;
+    gap: 30px;
+
+    @media (max-width:1199.98px) {
+      padding: 40px;
+    }
+
+    .counter-item {
+      max-width: 190px;
+
+      @media (max-width:575.98px) {
+        margin: 0 auto;
+      }
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: -60px;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 50px;
+        background: var(--bs-border);
+        content: "";
+
+        @media (max-width: 1399.98px) {
+          right: -35px;
+        }
+
+        @media (max-width: 1199.98px) {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+
+      .icon {
+        transform: translateY(8px);
+
+        .text {
+          .heading-two {
+            line-height: 34px;
+
+            span {
+              line-height: 1;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  &.style2{
+    .counter-body {
+      padding: 0;
+      .counter-item{
+        &::before{
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+  &.style3{
+    margin-bottom: -224px;
+    z-index: 99;
+  }
+}

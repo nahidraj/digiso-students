@@ -1,0 +1,78 @@
+/*=============================
+	26. Blog CSS Start
+===============================*/
+.ep-blog-section {
+  .blog-item {
+    box-shadow: var(--bs-shadow);
+    transition: var(--bs-transition);
+
+    .news-date {
+      top: -33px;
+      right: -38px;
+
+      .date {
+        top: 41px;
+        right: 44px;
+
+        .date {
+          color: var(--bs-white-color);
+          line-height: 30px;
+        }
+
+        p {
+          color: var(--bs-white-color);
+          font-size: 12px;
+        }
+      }
+
+    }
+
+    .blog-text {
+      padding: 40px;
+
+      @media (max-width:1199.98px) {
+        padding: 20px;
+      }
+
+      .blog-title {
+        a {
+          &:hover {
+            color: var(--bs-primary-color);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: var(--bs-shadow2);
+    }
+
+    .blog-meta {
+      i {
+        color: var(--bs-primary-color);
+      }
+    }
+  }
+
+  &.style2 {
+    .blog-item {
+      box-shadow: none;
+      background: var(--bs-bg-color1);
+
+      .blog-img {
+        padding: 20px;
+        padding-bottom: 0;
+
+        .news-date {
+          top: -33px;
+          right: -26px;
+        }
+      }
+
+      &:hover {
+        background: var(--bs-white-color);
+        box-shadow: var(--bs-shadow);
+      }
+    }
+  }
+}

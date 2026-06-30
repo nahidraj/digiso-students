@@ -1,0 +1,153 @@
+/*=============================
+	15. Services CSS Start
+===============================*/
+/* service section one */
+.ep-service-section {
+
+  .next,
+  .prev {
+    background-color: var(--bs-primary-color);
+    width: 56px;
+    height: 56px;
+    transition: var(--bs-transition);
+    color: var(--bs-white-color);
+    z-index: 9;
+
+    @media (max-width:1399.98px) {
+      opacity: 0.2;
+    }
+
+    i {
+      font-size: 16px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      background-color: var(--bs-black-color);
+    }
+
+    @media (max-width: 1199px) {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .next {
+    right: -115px;
+
+    @media (max-width:1399.98px) {
+      right: -28px;
+    }
+
+    @media (max-width:1199.98px) {
+      right: -22px;
+    }
+  }
+
+  .prev {
+    left: -115px;
+
+    @media (max-width:1399.98px) {
+      left: -28px;
+    }
+
+    @media (max-width:1199.98px) {
+      left: -22px;
+    }
+  }
+
+  .service-item {
+    height: 100%;
+
+    .img {
+
+      img {
+        transition: var(--bs-transition);
+      }
+    }
+
+    .text {
+      padding: 40px;
+      padding-top: 32px;
+
+      @media (max-width:1199.98px) {
+        padding: 24px;
+        padding-top: 24px;
+      }
+
+      .service-title {
+        a {
+          &:hover {
+            color: var(--bs-primary-color);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .img {
+        img {
+          transform: scale(1.1) rotate(2deg);
+        }
+      }
+    }
+  }
+
+  @media (max-width:1399.98px) {
+    &:hover {
+
+      .next,
+      .prev {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* service section two */
+.ep-service-section-two {
+  padding: 120px 195px 0;
+
+  @media (max-width:1799.98px) {
+    padding: 120px 50px 0;
+  }
+
+  @media (max-width:1399.98px) {
+    padding: 120px 24px 0;
+  }
+
+  @media (max-width:575.98px) {
+    padding: 120px 12px 0;
+  }
+
+  .service-two-item {
+    padding: 20px;
+    padding-bottom: 40px;
+
+    .img {
+      .icon {
+        bottom: 0;
+        z-index: 9;
+      }
+    }
+
+    .text {
+      .title {
+        a {
+          &:hover {
+            color: var(--bs-primary-color);
+          }
+        }
+      }
+    }
+  }
+
+  &.style2{
+    .service-two-item{
+      filter: drop-shadow(0px 5px 27.2px rgba(39, 39, 39, 0.12));
+    }
+  }
+}

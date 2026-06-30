@@ -1,0 +1,85 @@
+/*=============================
+	20. Portfolio CSS Start
+===============================*/
+
+.ep-portfolio-section {
+  .container-fluid {
+    padding: 0 55px;
+
+    @media (max-width:1399.98px) {
+      padding: 0 26px;
+    }
+  }
+
+  .portfolio-slider {
+    .swiper-wrapper {
+      .swiper-slide {
+        .image {
+          transition: var(--bs-transition);
+
+          .overlay {
+            background-color: rgba(0, 31, 63, 0.8);
+            border-radius: 12px;
+            padding: 30px;
+            opacity: 0;
+            transition: var(--bs-transition);
+
+            @media (max-width:1399.98px) {
+              padding: 12px;
+            }
+
+            @media (max-width:1199.98px) {
+              padding: 30px;
+            }
+            @media (max-width:575.98px) {
+              padding: 20px;
+            }
+
+            .text-wrapper {
+              padding-right: 30px;
+
+              .text-object {
+                background: url("../img/shape/protfolio-shape.svg");
+                padding: 12px 25px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 245px;
+
+                p {
+                  color: var(--bs-primary-color);
+                }
+              }
+            }
+          }
+
+          .icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--bs-primary-color);
+            border-radius: 50%;
+            top: 7px;
+            right: 19px;
+          }
+        }
+
+        &.swiper-slide-active {
+          .overlay {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &.style2{
+    background: var(--bs-bg-color2);
+    .shape{
+      top: 0;
+      right: 0;
+      z-index: -1;
+      img{
+        width: 110%;
+      }
+    }
+  }
+}
