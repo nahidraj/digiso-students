@@ -2,242 +2,71 @@
 	14. Banner CSS Start
 ===============================*/
 
-.ep-banner-section {
-  .overlay {
-    background-color: rgba(0, 31, 63, 0.9);
+.ep_banner_section {
 
-    .banner-bg-shape {
-      .arrow-shape {
-        top: 0;
-        left: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @media (max-width:1199.98px) {
-          left: 56%;
-
-          svg {
-            width: 120px;
-            height: 85px;
-          }
-        }
-      }
-
-      .shape1,
-      .shape2,
-      .shape3 {
-        margin-top: -25px;
-        animation: arrowDown 1.5s infinite ease-in-out;
-      }
-
-      .shape1 {
-        animation-delay: 0s;
-      }
-
-      .shape2 {
-        animation-delay: 0.3s;
-      }
-
-      .shape3 {
-        animation-delay: 0.6s;
-      }
-
-      .image {
-        max-width: 928px;
-
-        @media (max-width:1699.98px) {
-          max-width: 600px;
-        }
-
-        @media (max-width:1399.98px) {
-          max-width: 550px;
-        }
-
-        @media (max-width:1399.98px) {
-          max-width: 450px;
-        }
-
-        @media (max-width:991.98px) {
-          display: none;
-        }
-      }
+  .lines {
+    .line {
+      background: var(--border);
+      width: 1px;
     }
   }
 
-  &.style1 {
-    .swiper-pagination-bullets {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      justify-content: center;
-      left: 5%;
-      width: 5px;
+  .banner_content {
+    padding: 82px 0 120px 0;
+  }
 
-      @media (max-width:1599.98px) {
-        left: 2%;
+  .banner_text {
+    .banner_sub_title {
+      font-weight: 500;
+      line-height: 140%;
+      max-width: 274px;
+      color: var(--paragraph-color);
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--paragraph-color);
+      margin-left: 109px;
+
+      &::after {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        content: "\f061";
+        font-family: "Font Awesome 6 Pro";
+        transform: rotate(-45deg);
       }
 
-      @media (max-width:1199.98px) {
-        display: none;
+      &:hover {
+        color: var(--black-color);
+      }
+    }
+
+    .banner_title {
+      line-height: 110%;
+
+      .text_1 {
+        margin-left: 95px;
       }
 
-      .swiper-pagination-bullet {
-        height: 30px;
-        width: 5px;
-        background: var(--bs-white-color);
-        border-radius: 5px;
-        margin: 4px 0;
-        opacity: 1;
-        transition: var(--bs-transition);
+      .text_3 {
+        margin-left: 385px;
       }
+    }
 
-      .swiper-pagination-bullet-active {
-        background: var(--bs-primary-color);
-      }
+    p {
+      max-width: 577px;
+      margin-left: 308px;
+    }
+
+    .banner_shape {
+      left: 125px;
+      bottom: 20px;
     }
   }
 
-  .banner-text {
-    padding: 223px 0;
-    max-width: 796px;
-    margin-left: auto;
+  .banner_image {
+    margin-top: 72px;
 
-    @media (max-width:1699.98px) {
-      padding: 156px 0;
-      max-width: 756px;
-    }
-
-    @media (max-width:1399.98px) {
-      padding: 136px 0 136px 0;
-      max-width: 650px;
-    }
-
-    @media (max-width:1199.98px) {
-      padding: 136px 0 136px 15px;
-    }
-
-    @media (max-width:991.98px) {
-      max-width: 696px;
-      margin: 0 auto;
-      padding: 136px 0 136px 0;
-    }
-
-    @media (max-width:767.98px) {
-      max-width: 516px;
-    }
-
-    @media (max-width:575.98px) {
-      max-width: 100%;
-      padding: 120px 12px;
-    }
-
-    .detais {
-      max-width: 624px;
-    }
-
-    .banner-btn-wrapper {
-      @media (max-width:460px) {
-        flex-direction: column;
-      }
-
-      .theme-btn {
-        &:hover {
-          background-color: var(--bs-primary-color);
-        }
-      }
-    }
-  }
-
-  &.style2 {
-    margin: 24px;
-    margin-bottom: 0;
-    overflow: hidden;
-    border-radius: 24px;
-
-    @media (max-width:1199.98px) {
-      margin: 0;
-    }
-
-    .overlay {
-      padding: 200px 116px 200px 15px;
-      background: linear-gradient(0deg, rgba(0, 31, 63, 0.85) 0%, rgba(0, 31, 63, 0.85) 100%);
-      border-radius: 24px;
-
-      @media (max-width:1799.98px) {
-        padding: 200px 15px;
-      }
-
-      .banner-text {
-        max-width: 882px;
-
-        @media (max-width:1199.98px) {
-          max-width: 100%;
-          margin-bottom: 20px;
-          padding-left: 0;
-        }
-
-        .title {
-          @media (max-width:1399.98px) {
-            font-size: 58px;
-            line-height: 68px;
-          }
-
-          @media (max-width:575.98px) {
-            font-size: 38px;
-            line-height: 48px;
-          }
-        }
-      }
-
-      .scroll-down {
-        right: -1px;
-        bottom: 0;
-        padding: 20px 60px 20px 84px;
-
-        @media (max-width:575.98px) {
-          padding: 20px 20px 20px 20px;
-        }
-
-        .scroll-btn {
-          margin-left: 30px;
-          width: 40px;
-          height: 40px;
-          color: var(--bs-white-color);
-
-          &:hover {
-            background: var(--bs-primary-color);
-          }
-        }
-      }
-    }
-
-    .swiper-pagination-bullets {
-      position: absolute;
-      bottom: 80px;
-      justify-content: center;
-      left: 50%;
-      transform: translateX(-50%);
-      @media (max-width:767.98px) {
-        bottom: 120px;
-      }
-
-      .swiper-pagination-bullet {
-        height: 10px;
-        width: 10px;
-        background: var(--bs-white-color);
-        border-radius: 50px;
-        margin: 0 6px;
-        opacity: 1;
-        transition: var(--bs-transition);
-      }
-
-      .swiper-pagination-bullet-active {
-        background: var(--bs-primary-color);
-        transform: scale(1.4);
-      }
+    .image_main {
+      top: 17px;
     }
   }
 }

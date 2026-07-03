@@ -93,7 +93,7 @@ body {
   font-weight: var(--body-font-weight);
   line-height: var(--body-line-height);
   color: var(--black-color);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a,
@@ -155,6 +155,214 @@ p {
   background: var(--primary-color);
   color: var(--black-color);
   text-shadow: none;
+}
+
+/*=============================
+	04. Heading CSS Start
+===============================*/
+h1 {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.heading-two {
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: 700;
+}
+@media (max-width: 1199.98px) {
+  .heading-two {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 575.98px) {
+  .heading-two {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+.heading-three {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+}
+@media (max-width: 1399.98px) {
+  .heading-three {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+.heading-three.style2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+}
+@media (max-width: 1399.98px) {
+  .heading-three.style2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+.heading-four {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}
+@media (max-width: 1399.98px) {
+  .heading-four {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.heading-five {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.heading-six {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/*=============================
+	06. Background CSS Start
+===============================*/
+.bg-control {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.primary-bg {
+  background: var(--primary-color);
+}
+
+.black-bg {
+  background: var(--black-color);
+}
+
+.bg-one {
+  background: var(--bg-color1);
+}
+
+.bg-two {
+  background: var(--bg-color2);
+}
+
+/*=============================
+	08. Spacing CSS Start
+===============================*/
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+@media (max-width: 991.98px) {
+  .pt-60 {
+    padding-top: 40px;
+  }
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+@media (max-width: 991.98px) {
+  .pb-60 {
+    padding-bottom: 40px;
+  }
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+@media (max-width: 991.98px) {
+  .mb-60 {
+    margin-bottom: 40px;
+  }
+}
+
+.py-80 {
+  padding: 80px 0;
+}
+
+.mt-120 {
+  margin-top: 120px;
+}
+@media (max-width: 991.98px) {
+  .mt-120 {
+    margin-top: 100px;
+  }
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+@media (max-width: 991.98px) {
+  .pt-120 {
+    padding-top: 100px;
+  }
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+@media (max-width: 991.98px) {
+  .pb-120 {
+    padding-bottom: 100px;
+  }
+}
+
+.py-120 {
+  padding: 120px 0;
+}
+@media (max-width: 991.98px) {
+  .py-120 {
+    padding: 100px 0;
+  }
 }
 
 /*=============================
@@ -237,6 +445,91 @@ p {
 .ep_header_section .header_btn a {
   font-weight: 600;
   text-decoration: underline;
+}
+
+/*=============================
+	14. Banner CSS Start
+===============================*/
+.ep_banner_section .lines .line {
+  background: var(--border);
+  width: 1px;
+}
+.ep_banner_section .banner_content {
+  padding: 82px 0 120px 0;
+}
+.ep_banner_section .banner_text .banner_sub_title {
+  font-weight: 500;
+  line-height: 140%;
+  max-width: 274px;
+  color: var(--paragraph-color);
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--paragraph-color);
+  margin-left: 109px;
+}
+.ep_banner_section .banner_text .banner_sub_title::after {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  content: "\f061";
+  font-family: "Font Awesome 6 Pro";
+  transform: rotate(-45deg);
+}
+.ep_banner_section .banner_text .banner_sub_title:hover {
+  color: var(--black-color);
+}
+.ep_banner_section .banner_text .banner_title {
+  line-height: 110%;
+}
+.ep_banner_section .banner_text .banner_title .text_1 {
+  margin-left: 95px;
+}
+.ep_banner_section .banner_text .banner_title .text_3 {
+  margin-left: 385px;
+}
+.ep_banner_section .banner_text p {
+  max-width: 577px;
+  margin-left: 308px;
+}
+.ep_banner_section .banner_text .banner_shape {
+  left: 125px;
+  bottom: 20px;
+}
+.ep_banner_section .banner_image {
+  margin-top: 72px;
+}
+.ep_banner_section .banner_image .image_main {
+  top: 17px;
+}
+
+/*=============================
+	14. Banner CSS Start
+===============================*/
+.ep_brands_section {
+  padding: 60px 0;
+  transform: rotate(-2deg);
+  border-bottom: 2px solid var(--border);
+  margin-top: -25px;
+}
+.ep_brands_section .brand_slider {
+  gap: 80px;
+}
+.ep_brands_section .slider_item {
+  gap: 80px;
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+}
+.ep_brands_section .slider_item a:hover {
+  transform: scale(1.1);
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(calc(-100% - 5rem));
+    transform: translateX(calc(-100% - 5rem));
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

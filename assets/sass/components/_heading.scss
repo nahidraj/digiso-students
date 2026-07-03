@@ -1,25 +1,9 @@
 /*=============================
 	04. Heading CSS Start
 ===============================*/
-.heading-one {
-  font-size: 74px;
+h1 {
+  font-size: 96px;
   font-weight: 700;
-  line-height: 84px;
-
-  @media (max-width:1199.98px) {
-    font-size: 64px;
-    line-height: 74px;
-  }
-
-  @media (max-width:1199.98px) {
-    font-size: 55px;
-    line-height: 62px;
-  }
-
-  @media (max-width:575.98px) {
-    font-size: 38px;
-    line-height: 48px;
-  }
 }
 
 .heading-two {
