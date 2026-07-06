@@ -1,0 +1,12 @@
+{
+  "name": "digiso",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch assets/sass/main.scss assets/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

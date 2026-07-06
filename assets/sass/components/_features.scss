@@ -1,0 +1,37 @@
+/*=============================
+	14. Banner CSS Start
+===============================*/
+
+.ep_features_section {
+  margin-top: 166px;
+
+  .section_title {
+    max-width: 875px;
+  }
+}
+
+.feature_main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature_item {
+  padding: 20px 24px 140px 24px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(198, 198, 198, 0), #606060);
+    content: "";
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+}

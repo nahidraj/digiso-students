@@ -6,42 +6,16 @@ h1 {
   font-weight: 700;
 }
 
-.heading-two {
-  font-size: 44px;
-  line-height: 54px;
-  font-weight: 700;
-
-  @media (max-width:1199.98px) {
-    font-size: 38px;
-    line-height: 48px;
-  }
-
-  @media (max-width:575.98px) {
-    font-size: 32px;
-    line-height: 42px;
-  }
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
 }
 
-.heading-three {
-  font-size: 30px;
+h3 {
+  font-size: 32px;
   font-weight: 600;
-  line-height: 40px;
-
-  @media (max-width:1399.98px) {
-    font-size: 26px;
-    line-height: 36px;
-  }
-
-  &.style2 {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 46px;
-
-    @media (max-width:1399.98px) {
-      font-size: 26px;
-      line-height: 36px;
-    }
-  }
+  line-height: 132%;
 }
 
 .heading-four {

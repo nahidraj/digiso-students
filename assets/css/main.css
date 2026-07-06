@@ -158,6 +158,25 @@ p {
 }
 
 /*=============================
+	03. Section title CSS Start
+===============================*/
+.section_title .sub_title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 26px;
+  color: var(--paragraph-color);
+}
+.section_title .sub_title::before {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  background: url(../images/icon/sub-heading-icon.png);
+  content: "";
+  width: 63px;
+  height: 8px;
+}
+
+/*=============================
 	04. Heading CSS Start
 ===============================*/
 h1 {
@@ -165,45 +184,16 @@ h1 {
   font-weight: 700;
 }
 
-.heading-two {
-  font-size: 44px;
-  line-height: 54px;
-  font-weight: 700;
-}
-@media (max-width: 1199.98px) {
-  .heading-two {
-    font-size: 38px;
-    line-height: 48px;
-  }
-}
-@media (max-width: 575.98px) {
-  .heading-two {
-    font-size: 32px;
-    line-height: 42px;
-  }
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
 }
 
-.heading-three {
-  font-size: 30px;
+h3 {
+  font-size: 32px;
   font-weight: 600;
-  line-height: 40px;
-}
-@media (max-width: 1399.98px) {
-  .heading-three {
-    font-size: 26px;
-    line-height: 36px;
-  }
-}
-.heading-three.style2 {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 46px;
-}
-@media (max-width: 1399.98px) {
-  .heading-three.style2 {
-    font-size: 26px;
-    line-height: 36px;
-  }
+  line-height: 132%;
 }
 
 .heading-four {
@@ -234,9 +224,9 @@ h1 {
 	06. Background CSS Start
 ===============================*/
 .bg-control {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 .primary-bg {
@@ -258,6 +248,10 @@ h1 {
 /*=============================
 	08. Spacing CSS Start
 ===============================*/
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -323,6 +317,10 @@ h1 {
   .mb-60 {
     margin-bottom: 40px;
   }
+}
+
+.mb-80 {
+  margin-bottom: 80px;
 }
 
 .py-80 {
@@ -510,26 +508,68 @@ h1 {
   border-bottom: 2px solid var(--border);
   margin-top: -25px;
 }
-.ep_brands_section .brand_slider {
-  gap: 80px;
-}
-.ep_brands_section .slider_item {
-  gap: 80px;
-  animation: scroll 20s linear infinite;
-  white-space: nowrap;
-}
-.ep_brands_section .slider_item a:hover {
+.ep_brands_section .swiper-slide a:hover {
   transform: scale(1.1);
 }
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(calc(-100% - 5rem));
-    transform: translateX(calc(-100% - 5rem));
-  }
+.ep_brands_section .mySwiper .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+/*=============================
+	14. Banner CSS Start
+===============================*/
+.ep_features_section {
+  margin-top: 166px;
+}
+.ep_features_section .section_title {
+  max-width: 875px;
+}
+
+.feature_main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature_item {
+  padding: 20px 24px 140px 24px;
+  position: relative;
+}
+.feature_item::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(198, 198, 198, 0), #606060);
+  content: "";
+}
+.feature_item:last-child::after {
+  display: none;
+}
+
+/*=============================
+	14. Banner CSS Start
+===============================*/
+.ep_video_section .video_main {
+  padding: 177px 0;
+}
+.ep_video_section .video_main a {
+  width: 136px;
+  height: 136px;
+  background: url(../images/img/video-play-bg.png);
+  padding: 24px;
+}
+.ep_video_section .video_main a span {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--white-color);
+}
+.ep_video_section .video_main a:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=main.css.map */

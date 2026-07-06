@@ -1,34 +1,21 @@
 /*=============================
 	03. Section title CSS Start
 ===============================*/
-.section-title {
-  .title {
-    span {
-      color: var(--bs-primary-color);
-    }
-  }
+.section_title {
+  .sub_title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 26px;
+    color: var(--paragraph-color);
 
-  .subtitle {
-    font-size: 16px;
-    font-weight: 600;
-    padding: 8px 10px;
-    border-radius: 6px;
-    gap: 10px;
-    border: 1px solid var(--bs-primary-color);
-    margin-bottom: 22px;
-
-    @media (max-width:575.98px) {
-      margin-bottom: 12px;
-    }
-
-    .icon {
-      color: var(--bs-primary-color);
-    }
-
-    &.style2 {
-      color: var(--bs-primary-color);
-      background: var(--bs-bg-color3);
-      padding: 10px 15px;
+    &::before {
+      position: absolute;
+      top: -16px;
+      left: 0;
+      background: url(../images/icon/sub-heading-icon.png);
+      content: "";
+      width: 63px;
+      height: 8px;
     }
   }
 }
