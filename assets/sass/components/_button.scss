@@ -1,168 +1,21 @@
 /*=============================
 	05. Theme btn CSS Start
 ===============================*/
-
-.theme-btn {
-  color: var(--bs-white-color);
-  background-color: var(--bs-primary-color);
-  padding: 11px 21px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-
-  i {
-    margin-left: 7px;
-    font-size: 14px;
+.btn_rounded{
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--border);
+  span{
+    margin-top: 5px;
   }
-
-  &::before {
-    transition-duration: 800ms;
-    position: absolute;
-    width: 210%;
-    height: 330%;
-    content: "";
-    top: 188%;
-    left: 50%;
-    background: var(--bs-black-color);
-    transform: translateX(-50%) rotate(-8deg);
-    border-radius: 80%;
-    z-index: -1;
+  &:hover{
+    background: var(--primary-color);
   }
-
-  &:hover {
-    color: var(--bs-white-color);
-
-    &::before {
-      top: -118%;
-    }
-  }
-
-  &.style2 {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 24px;
-    padding: 14px 32px;
-  }
-
-  &.btn-dark{
-    background: var(--bs-black-color);
-    &::before{
-      background: var(--bs-primary-color);
-    }
-  }
-
-  &.btn-border-primary{
-    border: 1px solid var(--bs-primary-color);
-    color: var(--bs-primary-color);
-    background: transparent;
+  &.fill{
+    background: var(--primary-color);
     &:hover{
-      border-color: var(--bs-black-color);
-      color: var(--bs-white-color);
+      background: var(--black-color);
+      color: var(--white-color);
     }
   }
-}
-
-/* Hover effect btn */
-.theme-btn-icon {
-  --qode-hover-move-x: 110%;
-  --qode-hover-move-y: 100%;
-}
-
-.su-arrow-svg-top-right {
-  fill: currentColor;
-  stroke: none;
-}
-
-.theme-btn-icon path {
-  transition: transform .38s cubic-bezier(.37, .08, .02, .93), opacity .18s ease-out;
-}
-
-.theme-btn-icon path:nth-of-type(1) {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-  transition-delay: .15s, .15s;
-}
-
-.theme-btn-icon path:nth-of-type(2) {
-  transform: translateX(calc(-1 * var(--qode-hover-move-x))) translateY(var(--qode-hover-move-y));
-  opacity: .5;
-  transition-delay: 0s, 0s;
-}
-
-.hover-effect-btn:hover .theme-btn-icon path:nth-of-type(2) {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-  transition-delay: .15s, .15s;
-}
-
-.hover-effect-btn:hover .theme-btn-icon path:nth-of-type(1) {
-  transform: translateX(var(--qode-hover-move-x)) translateY(calc(-1 * var(--qode-hover-move-y)));
-  opacity: 0;
-  transition-delay: 0s, 0s;
-}
-
-.hover-effect-btn-2 {
-  overflow: hidden;
-  position: relative;
-
-  i {
-    position: absolute;
-    transition: var(--bs-transition);
-
-    &:first-child {
-      transform: translateX(-30px);
-      opacity: 0;
-    }
-  }
-
-  &:hover {
-    i {
-      &:first-child {
-        transform: translateX(0);
-        opacity: 1;
-      }
-
-      &:last-child {
-        transform: translateX(30px);
-        opacity: 0;
-      }
-    }
-  }
-
-  &.left {
-    i {
-      &:first-child {
-        transform: translateX(30px);
-        opacity: 0;
-      }
-    }
-
-    &:hover {
-      i {
-        &:first-child {
-          transform: translateX(0);
-          opacity: 1;
-        }
-
-        &:last-child {
-          transform: translateX(-30px);
-          opacity: 0;
-        }
-      }
-    }
-  }
-}
-
-/* Play btn */
-.play-btn {
-  transition: all 0.4s ease-out 0s;
-  font-size: 14px;
-  width: 40px;
-  height: 40px;
-  border: 5px solid #bcc0c6;
-  color: var(--bs-white-color);
-  outline: rgb(255 255 255 / 27%) solid 5px;
-  position: relative;
-  background-color: var(--bs-primary-color);
-  z-index: 9;
 }

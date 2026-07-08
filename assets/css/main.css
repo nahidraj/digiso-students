@@ -70,6 +70,7 @@
   --paragraph-color: #666666;
   --bg-color1: #FBFBFB;
   --bg-color2: #F8F8F8;
+  --color1: #ABABAB;
   --border: #E8E8E8;
   --body-font-size: 16px;
   --body-font-weight: 400;
@@ -113,6 +114,11 @@ a:focus,
 button:focus {
   text-decoration: none;
   outline: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }
 
 h1,
@@ -196,16 +202,9 @@ h3 {
   line-height: 132%;
 }
 
-.heading-four {
+h4 {
   font-size: 24px;
   font-weight: 600;
-  line-height: 34px;
-}
-@media (max-width: 1399.98px) {
-  .heading-four {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .heading-five {
@@ -218,6 +217,28 @@ h3 {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
+}
+
+/*=============================
+	05. Theme btn CSS Start
+===============================*/
+.btn_rounded {
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--border);
+}
+.btn_rounded span {
+  margin-top: 5px;
+}
+.btn_rounded:hover {
+  background: var(--primary-color);
+}
+.btn_rounded.fill {
+  background: var(--primary-color);
+}
+.btn_rounded.fill:hover {
+  background: var(--black-color);
+  color: var(--white-color);
 }
 
 /*=============================
@@ -363,11 +384,33 @@ h3 {
   }
 }
 
+.mt-170 {
+  margin-top: 170px;
+}
+
+.mb-170 {
+  margin-bottom: 170px;
+}
+
+.pt-170 {
+  padding-top: 170px;
+}
+
+.pb-170 {
+  padding-bottom: 170px;
+}
+
+.py-170 {
+  padding: 170px 0;
+}
+
 /*=============================
 	12. Header CSS Start
 ===============================*/
 .ep_header_section {
   border-bottom: 1px solid var(--border);
+  position: relative;
+  z-index: 999;
 }
 .ep_header_section .container-fluid {
   padding: 0 80px;
@@ -570,6 +613,97 @@ h3 {
 }
 .ep_video_section .video_main a:hover {
   transform: scale(1.1);
+}
+
+/*=============================
+	15. Services CSS Start
+===============================*/
+/* service section one */
+.ep_service_section .section_title {
+  padding: 0 76px;
+}
+.ep_service_section .section_title .title {
+  max-width: 446px;
+}
+.ep_service_section .container::before, .ep_service_section .container::after {
+  width: 1px;
+  height: 100%;
+  background: var(--border);
+  position: absolute;
+  top: 0;
+  content: "";
+}
+.ep_service_section .container::before {
+  left: 0;
+}
+.ep_service_section .container::after {
+  right: 0;
+}
+
+.service_item {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 49px 110px;
+}
+.service_item .number {
+  color: var(--color1);
+}
+
+.ep_text_slider_section {
+  height: 200px;
+  background: var(--black-color);
+}
+
+/*=============================
+	20. Portfolio CSS Start
+===============================*/
+.ep_portfolio_section .lines .line {
+  background: var(--border);
+  width: 1px;
+}
+.ep_portfolio_section .portfolio_content {
+  padding-top: 190px;
+}
+.ep_portfolio_section .portfolio_content .section_title {
+  max-width: 891px;
+}
+.ep_portfolio_section .portfolio_content .section_title .title {
+  max-width: 355px;
+}
+.ep_portfolio_section .portfolio_content .section_title img {
+  position: absolute;
+  bottom: -26px;
+  left: -95px;
+}
+.ep_portfolio_section .portfolio_content .section_title p {
+  max-width: 437px;
+}
+.ep_portfolio_section .portfolio_content .view_all {
+  padding: 46px 0 76px 0;
+}
+
+.portfolio_item {
+  height: 100%;
+}
+.portfolio_item img {
+  height: 100%;
+  object-fit: cover;
+}
+.portfolio_item .overlay {
+  padding: 30px 40px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 11.17%, rgba(19, 18, 18, 0.63) 82.56%, #131212 106.38%);
+}
+.portfolio_item .overlay .text .title a {
+  color: var(--white-color);
+}
+.portfolio_item .overlay .text .view a {
+  color: var(--color1);
+}
+.portfolio_item .overlay .text .view a i {
+  margin-left: 8px;
+}
+.portfolio_item .overlay .text .view a:hover {
+  color: var(--white-color);
 }
 
 /*# sourceMappingURL=main.css.map */

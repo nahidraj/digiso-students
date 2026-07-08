@@ -75,7 +75,7 @@
   --paragraph-color: #666666;
   --bg-color1: #FBFBFB;
   --bg-color2: #F8F8F8;
-  // --color1: #B0B2B8;
+  --color1: #ABABAB;
   // --color2: #FFE0E0;
   // --color3: #F7F7F7;
   // --color4: #FEBE42;
@@ -124,6 +124,11 @@ a:focus,
 button:focus {
   text-decoration: none;
   outline: none;
+}
+
+img{
+  height: auto;
+  max-width: 100%;
 }
 
 h1,

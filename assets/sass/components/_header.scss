@@ -3,6 +3,8 @@
 ===============================*/
 .ep_header_section {
   border-bottom: 1px solid var(--border);
+  position: relative;
+  z-index: 999;
 
   .container-fluid {
     padding: 0 80px;
@@ -94,8 +96,8 @@
     }
   }
 
-  .header_btn{
-    a{
+  .header_btn {
+    a {
       font-weight: 600;
       text-decoration: underline;
     }

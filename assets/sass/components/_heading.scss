@@ -18,15 +18,9 @@ h3 {
   line-height: 132%;
 }
 
-.heading-four {
+h4 {
   font-size: 24px;
   font-weight: 600;
-  line-height: 34px;
-
-  @media (max-width:1399.98px) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .heading-five {
