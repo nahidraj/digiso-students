@@ -4,13 +4,6 @@
 
 .ep_banner_section {
 
-  .lines {
-    .line {
-      background: var(--border);
-      width: 1px;
-    }
-  }
-
   .banner_content {
     padding: 82px 0 120px 0;
   }
@@ -68,5 +61,12 @@
     .image_main {
       top: 17px;
     }
+  }
+}
+
+.lines {
+  .line {
+    background: var(--border);
+    width: 1px;
   }
 }

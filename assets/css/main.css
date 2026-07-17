@@ -222,6 +222,10 @@ h4 {
 /*=============================
 	05. Theme btn CSS Start
 ===============================*/
+.btn_normal {
+  font-weight: 500;
+}
+
 .btn_rounded {
   width: 150px;
   height: 150px;
@@ -269,6 +273,10 @@ h4 {
 /*=============================
 	08. Spacing CSS Start
 ===============================*/
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-15 {
   margin-bottom: 15px;
 }
@@ -311,6 +319,10 @@ h4 {
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
 }
 
 .pt-60 {
@@ -491,10 +503,6 @@ h4 {
 /*=============================
 	14. Banner CSS Start
 ===============================*/
-.ep_banner_section .lines .line {
-  background: var(--border);
-  width: 1px;
-}
 .ep_banner_section .banner_content {
   padding: 82px 0 120px 0;
 }
@@ -542,6 +550,11 @@ h4 {
   top: 17px;
 }
 
+.lines .line {
+  background: var(--border);
+  width: 1px;
+}
+
 /*=============================
 	14. Banner CSS Start
 ===============================*/
@@ -564,7 +577,8 @@ h4 {
 	14. Banner CSS Start
 ===============================*/
 .ep_features_section {
-  margin-top: 166px;
+  margin-top: -35px;
+  padding-top: 190px;
 }
 .ep_features_section .section_title {
   max-width: 875px;
@@ -655,12 +669,86 @@ h4 {
 }
 
 /*=============================
+	18. Team CSS Start
+===============================*/
+.ep_team_section .team_content {
+  padding: 167px 0;
+}
+.ep_team_section .team_content .team_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.team_item .img {
+  overflow: hidden;
+}
+.team_item .img .shape {
+  background: #C1DCDB;
+  width: 100%;
+  height: 223px;
+  border-radius: 500px 500px 0 0;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  transition: var(--transition);
+}
+.team_item:hover .img .shape {
+  transform: scaleY(1.2);
+  transform-origin: bottom;
+}
+.team_item:nth-child(2) .img .shape {
+  background: #DBDBDB;
+}
+.team_item:nth-child(3) .img .shape {
+  background: #FFD0C0;
+}
+.team_item:nth-child(4) .img .shape {
+  background: #CFCFD0;
+}
+.team_item .team_text .name {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/*=============================
+	22. Counter CSS Start
+===============================*/
+.ep_counter_section .counter_content {
+  padding: 33px 0 53px 0;
+  border-top: 1px solid var(--border);
+}
+.ep_counter_section .counter_content .counter_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.ep_counter_section .counter_content .counter_grid .counter_item:nth-child(even) .number {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--paragraph-color);
+}
+.ep_counter_section .lines .line {
+  background: linear-gradient(to bottom, #E8E8E8 70%, rgba(198, 198, 198, 0) 100%);
+}
+
+.counter_item .number {
+  font-size: 96px;
+  font-weight: 700;
+  font-family: var(--font-sora);
+}
+.counter_item p {
+  font-weight: 500;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-digit-inner {
+  text-align: left;
+}
+
+/*=============================
 	20. Portfolio CSS Start
 ===============================*/
-.ep_portfolio_section .lines .line {
-  background: var(--border);
-  width: 1px;
-}
 .ep_portfolio_section .portfolio_content {
   padding-top: 190px;
 }
