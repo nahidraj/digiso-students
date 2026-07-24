@@ -1,276 +1,56 @@
 /*=============================
 	28. Footer CSS Start
 ===============================*/
-.ep-footer-section {
-  background-color: var(--bs-black-color2);
-  padding-top: 80px;
+.ep_footer_section {
+  .footer_content {
+    padding: 101px 0 34px 0;
 
-  .footer-top {
-    padding-bottom: 80px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-    .input-group {
-      max-width: 444px;
-      width: 100%;
-
-      .form-control {
-        font-size: 14px;
-
-        &:focus {
-          border-color: var(--bs-primary-color);
-        }
+    .text {
+      .footer_title {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 102%;
+        max-width: 660px;
+        margin: 0 auto 20px;
       }
+
     }
 
-    .theme-btn {
-      font-weight: 600;
-      z-index: 9;
-      height: 56px;
-
-      &:hover {
-        background-color: var(--bs-primary-color);
-      }
-    }
-  }
-
-  .footer-main {
-    margin-top: 60px;
-
-    .footer-widget {
-      .important-link {
-        li {
+    .footer_menu {
+      margin-top: 103px;
+      padding: 17px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      .menus {
+        ul {
           display: flex;
           align-items: center;
-          gap: 10px;
-
-          .icon {
-            i {
-              font-size: 16px;
-              color: var(--bs-primary-color);
-            }
-          }
-
-          a {
-            color: var(--bs-color1);
-            font-weight: 400;
-
-            &:hover {
-              margin-left: 6px;
-              opacity: 1;
-              color: var(--bs-white-color);
-            }
-          }
-        }
-
-        li+li {
-          margin-top: 15px;
-        }
-      }
-
-      .contact-info {
-        li {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-
-          .icon {
-            i {
-              font-size: 16px;
-              color: var(--bs-primary-color);
-            }
-          }
-
-          a {
-            color: var(--bs-color1);
-            font-weight: 500;
-
-            &:hover {
-              opacity: 1;
-              color: var(--bs-white-color);
-            }
-          }
-        }
-
-        li+li {
-          margin-top: 20px;
-        }
-      }
-    }
-  }
-
-  .footer-bottom {
-    background-color: var(--bs-black-color3);
-    margin-top: 80px;
-    padding: 30px 0;
-
-    .footer-copyright {
-      p {
-        color: var(--bs-white-color) !important;
-
-        span {
-          color: var(--bs-primary-color)
-        }
-      }
-    }
-
-    .footer-menu {
-      ul {
-        li {
-          a {
-            color: var(--bs-white-color);
-            letter-spacing: -0.36px;
-
-            &:hover {
-              color: var(--bs-primary-color);
-            }
-          }
-        }
-
-        li+li {
-          margin-left: 29px;
-        }
-      }
-    }
-  }
-
-  &.style2 {
-    .overlay {
-      background: rgba(0, 31, 63, 0.95);
-
-      .footer-top-info {
-        .info-item {
-          gap: 20px;
-
-          .icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 10px;
-            font-size: 30px;
-            position: relative;
-            color: var(--bs-primary-color);
-            z-index: 1;
-
-            &::before {
-              border: 1px solid rgba(255, 255, 255, 0.10);
-              opacity: 0.5;
-              background: linear-gradient(136deg, rgba(255, 255, 255, 0.30) 3.71%, rgba(67, 67, 67, 0.00) 101.87%);
-              backdrop-filter: blur(2px);
-              position: absolute;
-              border-radius: 10px;
-              top: 0;
-              left: 0;
-              content: "";
-              width: 100%;
-              height: 100%;
-              z-index: -1;
-            }
-          }
-
-          .text {
-            a {
-              color: var(--bs-paragraph-color);
-
-              &:hover {
-                color: var(--bs-white-color);
-              }
-            }
-          }
-        }
-      }
-
-      .footer-main {
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 80px 0;
-
-        .footer-widget {
-          .footer-widget-title {
-            position: relative;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-            display: inline-block;
-
-            &::before {
-              content: "";
-              position: absolute;
-              left: 0;
-              bottom: 0;
-              width: 100%;
-              height: 2px;
-              background: linear-gradient(90deg, #E10006 0%, #011F3D 100%);
-            }
-          }
-
-          .instagrame {
-            .item {
-              border-radius: 10px;
-              overflow: hidden;
-
-              img {
-                border-radius: 10px;
-                transition: var(--bs-transition);
-              }
-
-              &:hover {
-                img {
-                  transform: scale(1.05);
-                }
-              }
-            }
-          }
-
-          &.newsletter-two {
-            .input-groups {
-              input {
-                height: 54px;
-                width: 100%;
-                padding: 0 60px 0 30px;
-                background: var(--bs-white-color);
-              }
-
-              button {
-                height: 48px;
-                background: var(--bs-primary-color);
-                width: 78px;
-                color: var(--bs-white-color);
-                right: 4px;
-
-                &:hover {
-                  background: var(--bs-black-color);
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .footer-bottom {
-        background: var(--bs-primary-color);
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        padding: 18px 0;
-        margin-top: 20px;
-
-        .footer-copyright {
-          p {
-            span {
-              color: var(--bs-black-color);
-            }
-          }
-        }
-
-        .footer-social {
+          gap: 28px;
+          flex-wrap: wrap;
+          row-gap: 6px;
           li{
-            margin-left: 10px;
-            a {
-              width: 36px;
-              background: rgba(255, 255, 255, 0.2);
-              height: 36px;
-              color: var(--bs-white-color);
-              &:hover{
-                background: var(--bs-black-color);
-              }
+            a{
+              font-size: 18px;
+              font-weight: 600;
             }
           }
+        }
+      }
+    }
+    .footer_copyright{
+      padding-top: 33px;
+      .social_icon{
+        ul{
+          li{
+            a{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .copyright{
+        p{
+          color: var(--black-color);
         }
       }
     }

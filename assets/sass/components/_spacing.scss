@@ -9,6 +9,10 @@
   margin-bottom: 15px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -79,6 +83,10 @@
 
 .mb-80 {
   margin-bottom: 80px;
+
+  @media (max-width:991.98px) {
+    margin-bottom: 60px;
+  }
 }
 
 .py-80 {
@@ -135,4 +143,8 @@
 
 .py-170 {
   padding: 170px 0;
+
+  @media (max-width:1199.98px) {
+   padding: 100px 0;
+  }
 }

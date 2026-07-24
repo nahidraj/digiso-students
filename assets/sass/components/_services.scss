@@ -3,8 +3,20 @@
 ===============================*/
 /* service section one */
 .ep_service_section {
+  @media (max-width:575.98px) {
+    padding: 0 12px;
+  }
   .section_title {
     padding: 0 76px;
+
+    @media (max-width:1399.98px) {
+      padding: 0 24px;
+    }
+
+    @media (max-width:991.98px) {
+      padding: 0;
+    }
+
 
     .title {
       max-width: 446px;
@@ -38,12 +50,20 @@
   border-bottom: 1px solid var(--border);
   padding: 49px 110px;
 
+  @media (max-width:1399.98px) {
+    padding: 49px 24px;
+  }
+
+  @media (max-width:991.98px) {
+    padding: 39px 0;
+  }
+
   .number {
     color: var(--color1);
   }
 }
 
-.ep_text_slider_section{
+.ep_text_slider_section {
   height: 200px;
   background: var(--black-color);
 }

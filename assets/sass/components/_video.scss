@@ -1,22 +1,29 @@
 /*=============================
 	14. Banner CSS Start
 ===============================*/
-.ep_video_section{
-  .video_main{
+.ep_video_section {
+  .video_main {
     padding: 177px 0;
-    a{
+
+    @media (max-width:991.98px) {
+      padding: 110px 0;
+    }
+
+    a {
       width: 136px;
       height: 136px;
       background: url(../images/img/video-play-bg.png);
       padding: 24px;
-      span{
+
+      span {
         text-transform: uppercase;
         font-size: 24px;
         font-weight: 500;
         line-height: 150%;
         color: var(--white-color);
       }
-      &:hover{
+
+      &:hover {
         transform: scale(1.1);
       }
     }

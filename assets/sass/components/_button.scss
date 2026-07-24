@@ -1,23 +1,79 @@
 /*=============================
 	05. Theme btn CSS Start
 ===============================*/
-.btn_normal{
-font-weight: 500;
+.btn_normal {
+  font-weight: 500;
+
+  span {
+    margin-left: 5px;
+  }
+
+  &.btn_normal_white {
+    color: var(--white-color);
+  }
 }
 
-.btn_rounded{
+.btn_rounded {
   width: 150px;
   height: 150px;
   border: 1px solid var(--border);
-  span{
+
+  span {
     margin-top: 5px;
   }
-  &:hover{
+
+  &:hover {
     background: var(--primary-color);
   }
-  &.fill{
+
+  &.fill {
     background: var(--primary-color);
-    &:hover{
+
+    &:hover {
+      background: var(--black-color);
+      color: var(--white-color);
+    }
+  }
+}
+
+.btn-rounded-black {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-sora);
+
+  .btn-text {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 24px 66px 24px 46px;
+    border-radius: 50px;
+    z-index: 1;
+    transition: var(--transition);
+  }
+
+  .btn-icon {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-left: -35px;
+    z-index: 2;
+    transition: var(--transition);
+  }
+
+  &:hover {
+    .btn-text {
+      background: var(--primary-color);
+      color: var(--black-color);
+    }
+
+    .btn-icon {
       background: var(--black-color);
       color: var(--white-color);
     }
